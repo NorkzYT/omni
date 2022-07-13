@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name=
+    "viewport">
+    <meta content="" name="description">
+    <meta content="" name="author">
+    <title>
+      Genus X
+    </title>
+    <link href="{{url_for('static', filename='assets/favicon.ico')}}" rel="icon" type="image/x-icon">
+    <!-- Font Awesome icons (free version)-->
+
+    <script crossorigin="anonymous" src=
+    "https://use.fontawesome.com/releases/v6.1.0/js/all.js"></script><!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel=
+    "stylesheet">
+    <link href=
+    "https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+    rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Sofia' rel=
+    'stylesheet'><!-- Core theme CSS (includes Bootstrap)-->
+    <link href="{{url_for('static', filename='css/styles.css')}}" rel="stylesheet">
+  </head>
+  <body class="bg-dark" id="page-top">
+    <!-- Navigation-->
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+      <div class="container px-4 px-lg-5">
+        <button aria-controls="navbarResponsive" aria-expanded="false"
+        aria-label="Toggle navigation" class=
+        "navbar-toggler navbar-toggler-right" data-bs-target=
+        "#navbarResponsive" data-bs-toggle="collapse" type="button">Menu
+        <svg aria-hidden="true" class="svg-inline--fa fa-bars" data-fa-i2svg=""
+        data-icon="bars" data-prefix="fas" focusable="false" role="img"
+        viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
+        <path d=
+        "M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z"
+        fill="currentColor">
+        </path></svg> 
+        <!-- <i class="fas fa-bars"></i> Font Awesome fontawesome.com --></button>
+        <a class="navbar-brand" href="#page-top">Genus <span style=
+        "font-family: Sofia; font-size:15px">X</span></a>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link text-white-50" href="#about">About</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link text-white-50" href="#graphs">Graphs</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link text-white-50" href="#ourproject">Our
+              Project</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link text-white-50" href="#TEAM">Team</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Masthead-->
+
+    <header class="masthead">
+      <div class=
+      "container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
+        <div class="d-flex justify-content-center">
+          <div class="text-center">
+            <h1 class="mx-auto my-0 text-uppercase">
+              Genus <span style="font-family: Sofia;">X</span>
+            </h1>
+
+            <h2 class="text-white-50 mx-auto mt-2 mb-5">
+              Classify music genre using machine learning.
+            </h2>
+            <a class="btn btn-primary" href="#about">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- About-->
+
+    <section class="about-section text-center" id="about">
+      <div class="container px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+          <div class="col-lg-8" style="z-index:10;">
+            <h2 class="text-white mb-4">
+              What is it?
+            </h2>
+
+            <p class="text-white-50">
+              Genus <span style="font-family: Sofia;">X</span> is a machine
+              learning project that classifies music into 10 different genres
+              based on different parameters of the song given by <a href=
+              "https://www.kaggle.com/datasets/vicsuperman/prediction-of-music-genre">
+              this data set.</a>
+            </p>
+          </div>
+        </div>
+        <img alt="..." class="img-fluid" src="{{url_for('static', filename='images/notes.png')}}" style=
+        "transform: rotate(30deg)" width="600">
+      </div>
+    </section>
+    <!-- Projects-->
+
+    <h1 class="fw-light text-white" id="graphs" style="text-align: center;">
+      <br>
+      <br>
+      Visuals
+    </h1>
+    <!-- Content section 1-->
+
+    <section>
+      <div class="container px-5">
+        <div class="row gx-5 align-items-center">
+          <div class="col-lg-6 order-lg-2">
+            <div class="p-5" style="width:725px; height:625px;">
+              <iframe alt="..." class="img-fluid" src=
+              "{{url_for('static', filename='images/TempoVsPopularity.html')}}" style=
+              "width:121%; height:120%;"></iframe> /&gt;
+            </div>
+          </div>
+
+          <div class="col-lg-6 order-lg-1">
+            <div class="p-5">
+              <h2 class="display-4; text-white" style="font-weight: 800">
+                Popularity to Tempo
+              </h2>
+
+              <p class="text-white-50">
+                Starting off our project, we were trying to get as much data
+                from the dataset as possible. To make it easier, we used
+                different graphs that represent correlations between data
+                columns inside the dataset. On this graph, we can see the
+                correlation between the song tempo that is most commonly used
+                in each individual genre and the popularity of that song.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Content section 2-->
+
+    <section>
+      <div class="container px-5">
+        <div class="row gx-5 align-items-center">
+          <div class="col-lg-6 order-lg-1">
+            <div class="p-5" style="width:725px; height:625px;">
+              <iframe alt="..." class="img-fluid" src=
+              "{{url_for('static', filename='assets/tempo_loudness_scatter.html')}}" style=
+              "width:121%; height:120%;"></iframe> /&gt;
+            </div>
+          </div>
+
+          <div class="col-lg-6 order-lg-2">
+            <div class="p-5">
+              <h2 class="display-4; text-white" style="font-weight: 800;">
+                Loudness to Tempo
+              </h2>
+
+              <p class="text-white-50" style="text-align:left">
+                This scatterplot helps to show the massive overlap between
+                certain features of songs, in this case tempo and loudness.
+                While there are some clear clusters of genres at certain
+                loudness ranges, many genres overlap throughout these clusters,
+                which makes it especially difficult for a computer to
+                differentiate between genres.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Content section 3-->
+
+    <section>
+      <div class="container px-5">
+        <div class="row gx-5 align-items-center">
+          <div class="col-lg-6 order-lg-2">
+            <div class="p-5" style="width:725px; height:625px;">
+              <iframe alt="..." class="img-fluid" src="{{url_for('static', filename='assets/scatter_3d.html')}}"
+              style="width:121%; height:120%;"></iframe> /&gt;
+            </div>
+          </div>
+
+          <div class="col-lg-6 order-lg-1">
+            <div class="p-5">
+              <h2 class="display-4; text-white" style="font-weight: 800">
+                Duration to Loudness to Popularity
+              </h2>
+
+              <p class="text-white-50">
+                This 3d scatterplot takes into account song duration, loudness,
+                and popularity on the x-y-z axis as well as a song's energy
+                determining the size of the point. Although there still is
+                overlap, this helps to show that as more variables are taken
+                into account, each song begins to appear as more unique,
+                allowing more patterns to be seen across genres.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Content section 4-->
+
+    <section>
+      <div class="container px-5">
+        <div class="row gx-5 align-items-center">
+          <div class="col-lg-6 order-lg-1">
+            <div class="p-5" style=
+            "width:725px; height:625px; overflow: hidden;">
+              <iframe alt="..." class="img-fluid" src="{{url_for('static', filename='assets/heat_map.html')}}"
+              style="width:120%; height:120%;"></iframe> /&gt;
+            </div>
+          </div>
+
+          <div class="col-lg-6 order-lg-2">
+            <div class="p-5">
+              <h2 class="display-4; text-white" style="font-weight: 800">
+                Heat Map of All Variables
+              </h2>
+
+              <p class="text-white-50">
+                Here is a heat map that shows the correlation between different
+                variables in each song. Some variables show greater correlation
+                than others, such as energy and loudness, while other variables
+                are less correlated. Greater correlation would make it easier
+                to find patterns across genres, so because there are many
+                variables with correlation close to zero, the computer will
+                have a difficult time comparing many of the song parameters.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <br>
+
+    <h1 class="fw-light text-white" id="ourproject" style=
+    "text-align: center; font-weight: 1000">
+      <br>
+      <br>
+      Our Project
+    </h1>
+    <!-- Project One Row-->
+
+    <div class="row gx-0 mb-5 mb-lg-0 justify-content-center" style=
+    "border: 2px solid rgba(255, 0, 203, 0.9);">
+      <div class="col-lg-6">
+        <img alt="..." class="img-fluid" src=
+        "https://pimages.toolbox.com/wp-content/uploads/2022/04/11040522/46-4.png"
+        style="filter: invert(.85); width:100%">
+      </div>
+
+      <div class="col-lg-6">
+        <div class="bg-black text-center h-100 project">
+          <div class="d-flex h-100">
+            <div class="project-text w-100 my-auto text-center text-lg-left">
+              <h4 class="text-white">
+                Logistic Regression
+              </h4>
+
+              <p class="mb-0 text-white-50">
+                &nbsp;Logistic Regression is a Machine Learning classification
+                algorithm that &nbsp;is used to predict the probability of a
+                categorical dependent variable. In logistic regression, the
+                dependent variable is a binary variable that contains data
+                coded as 1 (yes, success, etc.) or 0 (no, failure, etc.).
+              </p>
+
+              <br>
+
+              <h4 class="text-white">
+                Multinomial Logistic Regression
+              </h4>
+
+              <p class="mb-0 text-white-50">
+                Multinomial Logistic Regression is a type of Logistic
+                Regression that deals with cases when the target or independent
+                variable has three or more possible values. In our case, there
+                are <b>10</b>.
+              </p>
+
+              <hr class="d-none d-lg-block mb-0 ms-0">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row gx-0 justify-content-center" style=
+    "border: 2px solid rgba(255, 0, 203, 0.9);">
+      <div class="col-lg-6">
+        <img alt="..." class="img-fluid" src=
+        "https://www.statstest.com/wp-content/uploads/2020/05/Multinomial-Logistic-Regression-1-1024x676.jpg"
+        style="width:100%; filter: invert(.85);">
+      </div>
+
+      <div class="col-lg-6 order-lg-first">
+        <div class="bg-black text-center h-100 project">
+          <div class="d-flex h-100">
+            <div class="project-text w-100 my-auto text-center text-lg-right">
+              <h4 class="text-white">
+                Pros and Cons of LR
+              </h4>
+
+              <h3 class="mb-0 text-white-50">
+                <b>Pros:</b>
+              </h3>
+
+              <p class="mb-0 text-white-50">
+                - Logistic regression is easier to implement, interpret, and
+                very efficient to train.
+              </p>
+
+              <p class="mb-0 text-white-50">
+                - Good accuracy for many simple data sets and it performs well
+                when the dataset is linearly separable.
+              </p>
+
+              <p class="mb-0 text-white-50">
+                - It can easily extend to multiple classes(multinomial
+                regression) and a natural probabilistic view of class
+                predictions.
+              </p>
+
+              <h3 class="mb-0 text-white-50">
+                <b>Cons:</b>
+              </h3>
+
+              <p class="mb-0 text-white-50">
+                - It can only be used to predict discrete functions. (Classes)
+              </p>
+
+              <p class="mb-0 text-white-50">
+                - It constructs linear boundaries. (In opposed to curvilinear)
+              </p>
+
+              <p class="mb-0 text-white-50">
+                - It is tough to obtain complex relationships using logistic
+                regression.
+              </p>
+
+              <hr class="d-none d-lg-block mb-0 ms-0">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Project two Row-->
+
+    <div class="row gx-0 justify-content-center" style=
+    "border: 2px solid rgba(255, 0, 203, 0.9);">
+      <div class="col-lg-6">
+        <img alt="..." class="img-fluid" src=
+        "https://cocalc13.ai-camp.dev/afffd160-11c4-4b0e-8185-cf29c729cf98/raw/.smc/jupyter/blobs/a.png?sha1=f3b7fab67c36dedf28b1d3ddc4e318bd3a1edb1e&amp;attempts=0"
+        style="width:100%;">
+      </div>
+
+      <div class="col-lg-6">
+        <div class="bg-black text-center h-100 project">
+          <div class="d-flex h-100">
+            <div class="project-text w-100 my-auto text-center text-lg-left">
+              <h4 class="text-white">
+                Accuracy of Logistic Regression
+              </h4>
+
+              <p class="mb-0 text-white-50">
+                Confusion matrix on the right, you can see the accuracy of
+                Logistic Regression model that we used for the data set. On the
+                y-axis are the actual values, and on the x-axis are predictions
+                of these genres that were made used by the LR model. Thus, the
+                higher the number is, the more accurate the predictions are.
+              </p>
+
+              <h4 class="text-white">
+                The best and the worst predictions
+              </h4>
+
+              <p class="mb-0 text-white-50">
+                From this graph, we can see that <b>the most accurate</b>
+                predictions were made for Classical music, and <b>the least
+                accurate</b> for Alternative music.
+              </p>
+
+              <hr class="d-none d-lg-block mb-0 ms-0">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Project three Row-->
+
+    <div class="row gx-0 justify-content-center" style=
+    "border: 2px solid rgba(255, 0, 203, 0.9);">
+      <div class="col-lg-6">
+        <img alt="..." class="img-fluid" src=
+        "https://editor.analyticsvidhya.com/uploads/23385Capture6.PNG" style=
+        "width:100%; filter:invert(.85);">
+      </div>
+
+      <div class="col-lg-6 order-lg-first">
+        <div class="bg-black text-center h-100 project">
+          <div class="d-flex h-100">
+            <div class="project-text w-100 my-auto text-center text-lg-right">
+              <h4 class="text-white">
+                Naive Bayes
+              </h4>
+
+              <p class="mb-0 text-white-50">
+                &nbsp;About Naive Bayes : Native Bayes is a machine learning
+                model for classification that uses the Bayes Theorem( <img alt=
+                "img" src=
+                "https://s0.wp.com/latex.php?latex=%5Ctextrm%7BP%28H+%5Ctextbar+E%29+%3D+%7D+%C2%A0%5Cfrac%7B%5Ctextrm%7B+P%28E+%5Ctextbar+H%29+%2A+P%28H%29%7D%7D+%7B%5Ctextrm%7BP%28E%29%7D%7D&amp;bg=ffffff&amp;fg=000&amp;s=0&amp;c=20201002"
+                style="filter: invert(1);" width="200"> )
+                <br>
+                - P(H) is the probability of hypothesis H being true. This is
+                known as the prior probability.
+                <br>
+                - P(E) is the probability of the evidence(regardless of the
+                hypothesis).
+                <br>
+                - P(E|H) is the probability of the evidence given that
+                hypothesis is true.
+                <br>
+                - P(H|E) is the probability of the hypothesis given that the
+                evidence is there.
+              </p>
+
+              <hr class="d-none d-lg-block mb-0 ms-0">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Project four Row-->
+
+    <div class="row gx-0 justify-content-center">
+      <div class="col-lg-6" style="border: 2px solid rgba(255, 0, 203, 0.9);">
+        <img alt="..." class="img-fluid" src="{{url_for('static', filename='assets/classification_tree.png')}}"
+        style="width:100%; filter:inver(.8)">
+      </div>
+
+      <div class="col-lg-6">
+        <div class="bg-black text-center h-100 project">
+          <div class="d-flex h-100">
+            <div class="project-text w-100 my-auto text-center text-lg-left">
+              <h4 class="text-white">
+                Classification Trees
+              </h4>
+
+              <p class="mb-0 text-white-50">
+                &nbsp;About Classification Trees:
+                <br>
+                Decision Trees \(DTs\)&nbsp;are a non\-parametric supervised
+                learning method used
+                for&nbsp;classification&nbsp;and&nbsp;regression. The goal is
+                to create a model that predicts the value of a target variable
+                by learning simple decision rules inferred from the data
+                features. A tree can be seen as a piecewise constant
+                approximation.
+                <br>
+                <br>
+                Pros
+                <br>
+                - Simple to understand and to interpret. Trees can be
+                visualized.
+                <br>
+                - Requires little data preparation.
+                <br>
+                - Able to handle both numerical and categorical data.
+                <br>
+                - Possible to validate a model using statistical tests.
+                <br>
+                <br>
+                Cons
+                <br>
+                - Decision\-tree learners can create over\-complex trees that
+                do not generalize the data well.
+                <br>
+                - Decision trees can be unstable because small var iations in
+                the data might result in a completely different tree being
+                generated
+                <br>
+                - Predictions of decision trees are neither smooth nor
+                continuous, but piecewise constant approximations as seen in
+                the above figure.
+                <br>
+                - Decision tree learners create biased trees if some classes
+                dominate.
+              </p>
+
+              <hr class="d-none d-lg-block mb-0 ms-0">
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Project five Row-->
+
+      <div class="row gx-0 justify-content-center" style=
+      "border: 2px solid rgba(255, 0, 203, 0.9);">
+        <!--                     <div class="col-lg-6"><img class="img-fluid" style="width:100%" src="assets/random_confusion.png" alt="..." /></div> -->
+
+        <div class="col-lg-6">
+          <img alt="..." class="img-fluid" src=
+          "https://cocalc13.ai-camp.dev/afffd160-11c4-4b0e-8185-cf29c729cf98/raw/.smc/jupyter/blobs/a.png?sha1=31e4277cd05ec5bd8fe205b1f01db55d3398a1cc&amp;attempts=0"
+          style="width:100%">
+        </div>
+
+        <div class="col-lg-6">
+          <div class="bg-black text-center h-100 project">
+            <div class="d-flex h-100">
+              <div class="project-text w-100 my-auto text-center text-lg-left">
+                <h4 class="text-white">
+                  Random Forest
+                </h4>
+
+                <p class="mb-0 text-white-50">
+                  &nbsp;
+                  <br>
+                  Random forest is a commonly-used machine learning algorithm
+                  trademarked by Leo Breiman and Adele Cutler, which combines
+                  the output of multiple decision trees to reach a single
+                  result. Its ease of use and flexibility have fueled its
+                  adoption, as it handles both classification and regression
+                  problems.
+                  <br>
+                  <br>
+                  Benefits
+                  <br>
+                  - Reduced risk of overfitting: Decision trees run the risk of
+                  overfitting as they tend to tightly fit all the samples
+                  within training data. However, when there’s a robust number
+                  of decision trees in a random forest, the classifier won’t
+                  overfit the model since the averaging of uncorrelated trees
+                  lowers the overall variance and prediction error.
+                  <br>
+                  - Provides flexibility: Since random forest can handle both
+                  regression and classification tasks with a high degree of
+                  accuracy, it is a popular method among data scientists.
+                  Feature bagging also makes the random forest classifier an
+                  effective tool for estimating missing values as it maintains
+                  accuracy when a portion of the data is missing.
+                  <br>
+                  - Easy to determine feature importance: Random forest makes
+                  it easy to evaluate variable importance, or contribution, to
+                  the model. There are a few ways to evaluate feature
+                  importance. Gini importance and mean decrease in impurity
+                  (MDI) are usually used to measure how much the model’s
+                  accuracy decreases when a given variable is excluded.
+                  However, permutation importance, also known as mean decrease
+                  accuracy (MDA), is another importance measure. MDA identifies
+                  the average decrease in accuracy by randomly permutating the
+                  feature values in oob samples.
+                  <br>
+                  <br>
+                  Challenges
+                  <br>
+                  - Time-consuming process: Since random forest algorithms can
+                  handle large data sets, they can be provide more accurate
+                  predictions, but can be slow to process data as they are
+                  computing data for each individual decision tree.
+                  <br>
+                  - Requires more resources: Since random forests process
+                  larger data sets, they’ll require more resources to store
+                  that data.
+                  <br>
+                  - More complex: The prediction of a single decision tree is
+                  easier to interpret when compared to a forest of them.
+                </p>
+
+                <hr class="d-none d-lg-block mb-0 ms-0">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Project six Row-->
+
+      <div class="row gx-0 justify-content-center" style=
+      "border: 2px solid rgba(255, 0, 203, 0.9);">
+        <div class="col-lg-6">
+          <img alt="..." class="img-fluid" src="{{url_for('static', filename='assets/img/demo-image-02.jpg')}}"
+          style="width:100%">
+        </div>
+
+        <div class="col-lg-6 order-lg-first">
+          <div class="bg-black text-center h-100 project">
+            <div class="d-flex h-100">
+              <div class=
+              "project-text w-100 my-auto text-center text-lg-right">
+                <h4 class="text-white">
+                  Try out Genus X
+                </h4>
+
+                <p class="mb-0 text-white-50">
+                </p>
+
+                <form class="text-white">
+                  <label for=""></label>
+                </form>
+
+                <p>
+                </p>
+
+                <hr class="d-none d-lg-block mb-0 me-0">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- MEET OUR TEAM SECTION -->
+      <!-- Header -->
+    </div>
+
+    <header class="bg-dark text-center py-5 mb-4" id="TEAM">
+      <label for=""></label>
+      <div class="container">
+        <label for=""></label>
+        <h1 class="fw-light text-white">
+          <label for="">Meet the Molten Cores Team</label>
+        </h1>
+      </div>
+    </header>
+    <!-- Page Content -->
+
+    <div class="container">
+      <label for=""></label>
+      <div class="row">
+        <label for=""><!-- Team Member 1 --></label>
+        <div class="col-xl-3 col-md-6 mb-4">
+          <label for=""></label>
+          <div class="card border-0 shadow">
+            <label for=""><img alt="..." class="center" height="450px" style="width:100%;" src=
+            "{{url_for('static', filename='images/Uzair.jpg')}}"></label>
+            <div class="card-body text-center bg-dark">
+              <label for=""></label>
+              <h5 class="card-title mb-0 text-white-50">
+                <label for="">Uzair Masih Isarahmed</label>
+              </h5>
+
+              <div class="card-text text-white-50">
+                <label for="">Sigma AI Camp Instructor</label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Team Member 2 -->
+
+        <div class="col-xl-3 col-md-6 mb-4">
+          <label for=""></label>
+          <div class="card border-0 shadow">
+            <label for=""><img alt="..." class="rounded" height="300px" src=
+            "{{url_for('static', filename='images/Richard L. .png')}}"></label>
+            <div class="card-body text-center bg-dark">
+              <label for=""></label>
+              <h5 class="card-title mb-0 text-white-50">
+                <label for="">Richard Lora</label>
+              </h5>
+
+              <div class="card-text text-white-50">
+                <label for="">Product Manager
+                <br>
+                <br>
+                "Tech enthusiast, Programmer, Developer, IT guy, serious about
+                learning and destined to become a Computer Scientist.
+                <br>
+                IBRACORP writer, tester and helper!"</label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Team Member 3 -->
+
+        <div class="col-xl-3 col-md-6 mb-4">
+          <label for=""></label>
+          <div class="card border-0 shadow">
+            <label for=""><img alt="..." class="rounded" height="300px" src=
+            "{{url_for('static', filename='images/Ryan-C-pic.jpg')}}"></label>
+            <div class="card-body text-center bg-dark">
+              <label for=""></label>
+              <h5 class="card-title mb-0 text-white-50">
+                <label for="">Ryan Cuccurullo</label>
+              </h5>
+
+              <div class="card-text text-white-50">
+                <label for="">Front End
+                <br>
+                Average python enjoyer</label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Team Member 4 -->
+
+        <div class="col-xl-3 col-md-6 mb-4">
+          <label for=""></label>
+          <div class="card border-0 shadow">
+            <label for=""><img alt="..." class="rounded" height="400px" style="width:100%;" src=
+            "{{url_for('static', filename='images/nadia.png')}}"></label>
+            <div class="card-body text-center bg-dark">
+              <label for=""></label>
+              <h5 class="card-title mb-0 text-white-50">
+                <label for="">Nadia Pesch</label>
+              </h5>
+
+              <div class="card-text text-white-50">
+                <label for="">Has the most IG followers</label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Team Member 5 -->
+
+        <div class="col-xl-3 col-md-6 mb-4">
+          <label for=""></label>
+          <div class="card border-0 shadow">
+            <label for=""><img alt="..." class="rounded" height="350px" src=
+           "{{url_for('static', filename='images/Ryan R. .png')}}"></label>
+            <div class="card-body text-center bg-dark">
+              <label for=""></label>
+              <h5 class="card-title mb-0 text-white-50">
+                <label for="">Ryan Ruhland</label>
+              </h5>
+
+              <div class="card-text text-white-50">
+                <label for="">Hot Pocket Devourer</label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Team Member 6 -->
+
+        <div class="col-xl-3 col-md-6 mb-4">
+          <label for=""></label>
+          <div class="card border-0 shadow">
+            <label for=""><img alt="..." class="rounded" height="400px" style="width:100%;" src=
+            "{{url_for('static', filename='images/Ilya M. .jpg')}}"></label>
+            <div class="card-body text-center bg-dark">
+              <label for=""></label>
+              <h5 class="card-title mb-0 text-white-50">
+                <label for="">Ilia Miroshnikov</label>
+              </h5>
+
+              <div class="card-text text-white-50">
+                <label for="">Future Roblox Developer Employee</label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /.row -->
+    </div>
+    <!-- /.container -->
+    <!-- Contact-->
+
+    <section class="contact-section bg-black">
+      <label for=""></label>
+      <div class="container px-4 px-lg-5">
+        <label for=""></label>
+        <div class="row gx-4 gx-lg-5">
+          <label for=""></label>
+          <div class="col-md-4 mb-3 mb-md-0">
+            <label for=""></label>
+            <div class="card py-4 h-100 bg-dark">
+              <label for=""></label>
+              <div class="card-body text-center bg-dark">
+                <label for=""><i class=
+                "fas fa-map-marked-alt text-primary mb-2"></i></label>
+                <h4 class="text-uppercase m-0 text-white-50">
+                  <label for="">Address</label>
+                </h4>
+
+                <hr class="my-4 mx-auto">
+
+                <div class="small text-white-50">
+                  <label for=""><a href=
+                  "https://goo.gl/maps/u7XrRwd8rqcVQHmc7">2627 Hanover Street,
+                  Palo Alto, CA 94304</a></label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-3 mb-md-0">
+            <label for=""></label>
+            <div class="card py-4 h-100 bg-dark">
+              <label for=""></label>
+              <div class="card-body text-center bg-dark">
+                <label for=""><i class=
+                "fas fa-envelope text-primary mb-2"></i></label>
+                <h4 class="text-uppercase m-0 text-white-50">
+                  <label for="">Email</label>
+                </h4>
+
+                <hr class="my-4 mx-auto">
+
+                <div class="small text-white-50">
+                  <label for="">hello@ai-camp.org</label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-3 mb-md-0">
+            <label for=""></label>
+            <div class="card py-4 h-100 bg-dark">
+              <label for=""></label>
+              <div class="card-body text-center bg-dark">
+                <label for=""><i class=
+                "fas fa-mobile-alt text-primary mb-2"></i></label>
+                <h4 class="text-uppercase m-0 text-white-50">
+                  <label for="">Phone</label>
+                </h4>
+
+                <hr class="my-4 mx-auto">
+
+                <div class="small text-white-50">
+                  <label for="">+1 (650) 436-4477</label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="social d-flex justify-content-center">
+          <label for=""><a class="mx-2" href=
+          "https://www.instagram.com/aicamp1/"><i class=
+          "fab fa-instagram"></i></a> <a class="mx-2" href=
+          "https://www.kaggle.com/datasets/4b84082f381681898a853884a70fcac5ac6b18dccb3f5236112a44d524a6322d">
+          <i class="fab fa-kaggle"></i></a> <a class="mx-2" href=
+          "https://github.com/palebluedot13/SC22-BatchB-molten-cores"><i class=
+          "fab fa-github"></i></a></label>
+        </div>
+        <label for=""></label>
+      </div>
+    </section>
+    <!-- Footer-->
+
+    <footer class="footer bg-black small text-center text-white-50">
+      <label for=""></label>
+      <div class="container px-4 px-lg-5">
+        <label for="">Copyright © Molten Cores 2022</label>
+      </div>
+    </footer>
+    <!-- Bootstrap core JS-->
+     <label for="">
+    <script src=
+    "https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+     
+    <script src="js/scripts.js"></script> 
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+     
+    <!-- * *                               SB Forms JS                               * *-->
+     
+    <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+     
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+     
+    <script src=
+    "https://cdn.startbootstrap.com/sb-forms-latest.js"></script></label>
+  </body>
+</html>
