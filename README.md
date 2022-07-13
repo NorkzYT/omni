@@ -1,4 +1,4 @@
-# Universal Project Scaffold
+# Data Science Web Scaffold
 A scaffold for deploying dockerized flask applications.
 
 If you have any questions, feel free to open an issue on [Github](https://github.com/organization-x/omni/issues).
@@ -72,13 +72,17 @@ The files/directories which you will need to edit are **bolded**
 - host_config
 - app/
      - **main.py**
-     - **pytorch_model.bin** <- you will need to upload this yourself after cloning the repo when developing the site
      - **requirements.txt**
      - **utils.py**
      - templates/
           - **index.html**
-### pytorch_model.bin ###
-The weights file - must upload if you are running file on coding center or are trying to deploy.
+     - static/
+          - css/
+               - **styles.css**
+          - images/
+               - **GDP_correlation_map.png**
+          - js/
+               - **scripts.js**
 ### main.py ###
 Contains the main flask app itself.
 ### requirements.txt ###
@@ -90,11 +94,11 @@ To generate a requirements.txt file you can run
 
 the requirements.txt file will then be updated. Keep in mind: some packages you install on one operating system may not be available on another. You will have to debug and resolve this yourself if this is the case.
 ### static/ ###
-Contains the static images, CSS, & JS files used by the flask app for the webpage. You will need to create this and put files in it. Place all your images used for your website in static/images/ so that you can then reference them in your html files.
+Contains the static images, CSS, & JS files used by the flask app for the webpage. You will need to create this and put files in it. Place all your images used for your website in static/images/ so that you can then reference them in your html files. You can also place your css files in this folder, to reference them like static/css/styles.css
 ### utils.py ###
 Contains common functions used by the flask app. Put things here that are used more than once in the flask app.
 ### templates/ ###
-Contains the HTML pages used for the webpage. Edit these to fit your project. index.html is the demo page.
+Contains the HTML pages used for the webpage. Edit these to fit your project. index.html is the demo page. Optionally, you can add another team.html page or include a team section in index.html. 
 ### Files used for deployment ###
 `config.py`
 `Dockerfile`
