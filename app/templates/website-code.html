@@ -21,7 +21,7 @@
     rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Sofia' rel=
     'stylesheet'><!-- Core theme CSS (includes Bootstrap)-->
-    <link href="{{url_for('static', filename='css/styles.css')}}" rel="stylesheet">
+    <link href="{{url_for('static', filename='css/styles8.css')}}" rel="stylesheet">
   </head>
   <body class="bg-dark" id="page-top">
     <!-- Navigation-->
@@ -40,8 +40,8 @@
         fill="currentColor">
         </path></svg> 
         <!-- <i class="fas fa-bars"></i> Font Awesome fontawesome.com --></button>
-        <a class="navbar-brand" href="#page-top">Genus <span style=
-        "font-family: Sofia; font-size:15px">X</span></a>
+        <a class="navbar-brand" href="#page-top">Genus <temp style=
+        "font-family: Sofia; font-size:15px">X</temp></a>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
@@ -79,6 +79,7 @@
               Classify music genre using machine learning.
             </h2>
             <a class="btn btn-primary" href="#about">Learn More</a>
+            <a class="btn btn-primary" href="#product">Try out our project</a>
           </div>
         </div>
       </div>
@@ -94,7 +95,7 @@
             </h2>
 
             <p class="text-white-50">
-              Genus <span style="font-family: Sofia;">X</span> is a machine
+              Genus <temp style="font-family: Sofia;">X</temp> is a machine
               learning project that classifies music into 10 different genres
               based on different parameters of the song given by <a href=
               "https://www.kaggle.com/datasets/vicsuperman/prediction-of-music-genre">
@@ -250,9 +251,9 @@
       <br>
       Our Project
     </h1>
-    
+
     <!-- Project One Row-->
-    
+
     <div class="row gx-0 mb-5 mb-lg-0 justify-content-center border" >
       <div class="col-lg-6 border-r">
         <img alt="..." class="img-fluid" src=
@@ -297,7 +298,7 @@
     </div>
 
     <!-- Project two Row-->
-    
+
     <div class="row gx-0 justify-content-center border" >
       <div class="col-lg-6 border-l">
         <img alt="..." class="img-fluid" src=
@@ -356,13 +357,13 @@
         </div>
       </div>
     </div>
-    
+
     <!-- Project three Row-->
-    
+
     <div class="row gx-0 justify-content-center border" >
       <div class="col-lg-6 border-r">
         <img alt="..." class="img-fluid" src=
-        "https://cocalc13.ai-camp.dev/afffd160-11c4-4b0e-8185-cf29c729cf98/raw/.smc/jupyter/blobs/a.png?sha1=f3b7fab67c36dedf28b1d3ddc4e318bd3a1edb1e&amp;attempts=0"
+        "{{url_for('static', filename='assets/Logistic Reg.png')}}"
         style="width:100%;">
       </div>
 
@@ -398,9 +399,9 @@
         </div>
       </div>
     </div>
-    
+
     <!-- Project four Row-->
-    
+
     <div class="row gx-0 justify-content-center border" >
       <div class="col-lg-6 border-l">
         <img alt="..." class="img-fluid" src=
@@ -442,9 +443,9 @@
         </div>
       </div>
     </div>
-    
+
     <!-- Project five Row-->
-    
+
     <div class="row gx-0 justify-content-center border">
       <div class="col-lg-6 border-r" >
         <img alt="..." class="img-fluid" src="{{url_for('static', filename='assets/classification_tree.png')}}"
@@ -462,7 +463,7 @@
               <p class="mb-0 text-white-50">
                 &nbsp;About Classification Trees:
                 <br>
-                Decision Trees \(DTs\)&nbsp;are a non\-parametric supervised
+                Decision Trees (DTs)&nbsp;are a non-parametric supervised
                 learning method used
                 for&nbsp;classification&nbsp;and&nbsp;regression. The goal is
                 to create a model that predicts the value of a target variable
@@ -485,10 +486,10 @@
                 <br>
                 Cons
                 <br>
-                - Decision\-tree learners can create over\-complex trees that
+                - Decision\-tree learners can create over complex trees that
                 do not generalize the data well.
                 <br>
-                - Decision trees can be unstable because small var iations in
+                - Decision trees can be unstable because small variations in
                 the data might result in a completely different tree being
                 generated
                 <br>
@@ -506,7 +507,7 @@
         </div>
       </div>
     </div>
-    
+
     <!-- Project six Row-->
 
     <div class="row gx-0 justify-content-center border" >
@@ -514,7 +515,7 @@
 
       <div class="col-lg-6 border-l">
         <img alt="..." class="img-fluid" src=
-        "https://cocalc13.ai-camp.dev/afffd160-11c4-4b0e-8185-cf29c729cf98/raw/.smc/jupyter/blobs/a.png?sha1=31e4277cd05ec5bd8fe205b1f01db55d3398a1cc&amp;attempts=0"
+        "{{url_for('static', filename='assets/RandomForest.png')}}"
         style="width:100%">
       </div>
 
@@ -587,6 +588,222 @@
       </div>
     </div>
 
+    <!-- Project seven Row-->
+
+      <div class="row gx-0 justify-content-center border" >
+        <!--                     <div class="col-lg-6"><img class="img-fluid" style="width:100%" src="assets/random_confusion.png" alt="..." /></div> -->
+
+        <div class="col-lg-6 border-r">
+          <img alt="..." class="img-fluid" src=
+          "{{url_for('static', filename='assets/XGBoost.png')}}"
+          style="width:100%">
+        </div>
+
+        <div class="col-lg-6 border-l">
+          <div class="bg-black text-center h-100 project">
+            <div class="d-flex h-100">
+              <div class="project-text w-100 my-auto text-center text-lg-left">
+                <h4 class="text-white">
+                  XGBoost
+                </h4>
+
+                <p class="mb-0 text-white-50">
+                  &nbsp;
+                  <br>
+                  XGBoost is a popular supervised machine learning algorithm that tends to outperform many other algorithms.
+                  <br>
+                  <br>
+                  Benefits
+                  <br>
+                  - XGBoost can be used for both regression and classification models and for large datasets.
+                  <br>
+                  - It provides highly accurate results by using more accurate approximations in order to find the best tree models.
+                  <br>
+                  <br>
+                  Challenges
+                  <br>
+                  - XGBoost often takes much longer to run than other algorithms because of how system-heavy it is.
+                  <br>
+                  - Requires more resources: Like random forests, XGBoost can process
+                  larger data sets, so it will require more resources to store
+                  that data.
+                  <br>
+                  <br>
+                  Our Data
+                  <br>
+                  - It is clear that even XGBoost has a difficult time determining the genre of music because of the many overlapping parameters. For example, the model classifies Hip-Hop music as Rap more than it classifies Hip-Hop correctly, as seen in the bottom row of the heat map.
+                  <br>
+                  - Using XGBoost with our data and messing with the model's parameters through trial and error, we were able to get a final accuracy of 66.6%.
+                </p>
+
+                <hr class="d-none d-lg-block mb-0 ms-0">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <!-- Project eight Row-->
+
+    <div class="row gx-0 justify-content-center border">
+
+        <div class="col-lg-6 border-l" style=" height:625px; overflow: hidden;">
+          <iframe alt="..." class="img-fluid" src="{{url_for('static', filename='assets/accuracy.html')}}" style="width:100%; height:100%;"></iframe>/&gt;
+      </div>
+      <div class="col-lg-6 order-lg-first border-r justify-content-center" >
+        <div class="bg-black text-center h-300 project">
+          <div class="d-flex h-300">
+            <div class="project-text w-100 my-auto text-center text-lg-left">
+              <h4 class="text-white">
+                Accuracy
+              </h4>
+
+              <p class="mb-0 text-white-50" >
+                &nbsp;
+       Each EDA we used has a different percentage accuracy. Some are more accurate in predicting outcomes than others.
+                <br>
+                This bar graph shows the difference in accuracy in each of the EDA's that we used. The decimal shown can be translated to the percent of accuracy. (ex 0.5 = 50%)
+
+              </p>
+            <br><br>
+              <table style="    margin-left: auto; margin-right: auto;   color: rgba(255, 0, 203, 1); border: 2px solid rgba(255, 0, 203, 1);width:90%;">
+                <tr>
+                  <th colspan="2">Overveiw</th>
+                </tr>
+                <tr>
+                  <th>Model</th>
+                  <th>Accuracy (in %)</th>
+                </tr>
+                <tr>
+                  <td style="border: 2px solid rgba(255, 255, 255, 0.6);height: 50px;">  Logistic Regression  </td>
+                  <td style="border: 2px solid rgba(255, 255, 255, 0.6);height: 50px;">  53  </td>
+                </tr>
+                <tr>
+                  <td style="border: 2px solid rgba(255, 255, 255, 0.6);height: 50px;">  Naive Bayes  </td>
+                  <td style="border: 2px solid rgba(255, 255, 255, 0.6);height: 50px;">  42  </td>
+                </tr>
+                <tr>
+                  <td style="border: 2px solid rgba(255, 255, 255, 0.6);height: 50px;">  Classification Trees  </td>
+                  <td style="border: 2px solid rgba(255, 255, 255, 0.6);height: 50px;">  44  </td>
+                </tr>
+                <tr>
+                  <td style="border: 2px solid rgba(255, 255, 255, 0.6);height: 50px;">  Random forest  </td>
+                  <td style="border: 2px solid rgba(255, 255, 255, 0.6);height: 50px;">  50  </td>
+                </tr>
+                <tr>
+                  <td style="border: 2px solid rgba(255, 255, 255, 0.6);height: 50px;">  Logistic Regression  </td>
+                  <td style="border: 2px solid rgba(255, 255, 255, 0.6);height: 50px;">  53  </td>
+                </tr>
+                <tr>
+                  <td style="border: 2px solid rgba(255, 255, 255, 0.6);height: 50px;">  XGBoost  </td>
+                  <td style="border: 2px solid rgba(255, 255, 255, 0.6);height: 50px;">  66  </td>
+                </tr>
+              </table>
+              <br><br>
+
+
+
+              <hr class="d-none d-lg-block mb-0 ms-0">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Try Out Project Row-->
+
+     <div class="row gx-0 justify-content-center border" id = "product" >
+
+        <div class="bg-black text-center h-100 project">
+          <div class="d-flex h-100">
+            <div class=
+            "project-text w-100 my-auto text-center text-lg-right">
+              <h4 class="text-white">
+                Try out Genus <temp style=
+        "font-family: Sofia; font-size:20px">X</temp>
+                </h4> 
+
+                      <p  class="mb-0 text-white-50">Enter the following values of the song you want to know the genre for
+
+                      </p>
+
+                        <p class="mb-0 text-white-50">
+                        </p>
+             
+                        <form class="text-white" action="" method="post" autocomplete="on">
+                            <label for="pop">Popularity:</label><br>
+                          <input type = "text" id = "pop" name = "pop" required="required" />
+<br>
+                          <p>
+                          </p>
+                          <label for = "acus">Acousticness:</label><br>
+                          <input type = "text" id = "acus" name = "acus" required="required" />
+<br>
+                          <p>
+                          </p>
+                          <label for = "danc">Danceability:</label><br>
+                          <input type = "text" id = "danc" name = "danc" required="required" />
+<br>
+                          <p>
+                          </p>
+                          <label for = "dur">Duration (ms).<br> Use <a href="https://www.timecalculator.net/minutes-to-milliseconds" target="_blank">this link</a> to convert minutes to milliseconds:</label><br>
+                          <input type = "text" id = "dur" name = "dur" required="required" />
+<br>
+                          <p>
+                          </p>
+                            <label for = "ener">Energy:</label><br>
+                          <input type = "text" id = "ener" name = "ener" required="required" />
+<br>
+                          <p>
+                          </p>
+                            <label for = "inst">Instrumentalness:</label><br>
+                          <input type = "text" id = "" name = "inst" required="required" />
+<br>
+                          <p>
+                          </p>
+                          <label for = "key">Key (C - 9, C# - 3, D - 1, D# - 11, E - 10, F - 7, F# 4, G - 6, G# - 2, A - 8, A# - 0, B - 5):</label><br>
+                          <input type = "text" id = "key" name = "key" required="required" />
+<br>
+                          <p>
+                          </p>
+                          <label for = "liv">Liveness:</label><br>
+                          <input type = "text" id = "liv" name = "liv" required="required" />
+<br>
+                          <p>
+                          </p>
+                         <label for = "loud">Loudness:</label><br>
+                          <input type = "text" id = "loud" name = "loud" required="required" />
+<br>
+                          <p>
+                          </p>
+                          <label for = "mod">Mode (Minor - 0, Major - 1):</label><br>
+                          <input type = "text" id = "mod" name = "mod" required="required" />
+<br>
+                          <p>
+                          </p>
+                           <input type="submit" value="Submit" style="border-radius: 50%; padding: 5px 10px 5px 10px">
+                        </form>
+                        <p></p>
+               {% if prediction_test != null or prediction_test != '' %}
+                <p class="mb-0 text-white-50">
+                  {{ prediction_text }}!
+              </p> 
+           {% endif %}
+
+
+                      <hr class="d-none d-lg-block mb-0 me-0">
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+
+
+      <!-- MEET OUR TEAM SECTION -->
+      <!-- Header -->
+
     <header class="bg-dark text-center py-5 mb-4" id="TEAM">
       <label for=""></label>
       <div class="container">
@@ -599,7 +816,7 @@
     <!-- Page Content -->
 
     <div class="container">
-      <label for=""></label>
+     <label for=""></label>
       <div class="row">
         <label for=""><!-- Team Member 1 --></label>
         <div class="col-xl-3 col-md-6 mb-4">
@@ -679,7 +896,7 @@
               </h5>
 
               <div class="card-text text-white-50">
-                <label for="">Has the most IG followers</label>
+                <label for="">Student at Lane Tech High School, Figure Skater and Piano player</label>
               </div>
             </div>
           </div>
@@ -822,16 +1039,16 @@
     <script src=
     "https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Core theme JS-->
-     
+
     <script src="js/scripts.js"></script> 
     <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-     
+
     <!-- * *                               SB Forms JS                               * *-->
-     
+
     <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-     
+
     <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-     
+
     <script src=
     "https://cdn.startbootstrap.com/sb-forms-latest.js"></script></label>
   </body>

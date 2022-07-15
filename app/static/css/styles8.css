@@ -339,8 +339,9 @@ svg {
 }
 
 table {
-  caption-side: bottom;
-  border-collapse: collapse;
+
+  color: rgba(255, 255, 255, 0.5);
+  border: 2px solid rgba(255, 0, 203, 1)
 }
 
 caption {
@@ -355,15 +356,8 @@ th {
   text-align: -webkit-match-parent;
 }
 
-thead,
-tbody,
-tfoot,
-tr,
-td,
-th {
-  border-color: inherit;
-  border-style: solid;
-  border-width: 0;
+td {
+  border: 2px solid rgba(255, 255, 255, 0.6);
 }
 
 label {
@@ -378,6 +372,8 @@ button:focus:not(:focus-visible) {
   outline: 0;
 }
 
+
+
 input,
 button,
 select,
@@ -387,6 +383,10 @@ textarea {
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
+  border: 2px solid rgba(255, 0, 203, 0.5);
+  background-color: #222222;
+  color: white;
+
 }
 
 button,
@@ -5106,6 +5106,23 @@ fieldset:disabled .btn {
   .card-group > .card:not(:first-child) .card-footer {
     border-bottom-left-radius: 0;
   }
+}
+
+.card:hover .overlay {
+  bottom: 0;
+  height: 100%;
+}
+
+.overlay-text {
+  color: rgba(255, 0, 203, 1);
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
 
 .accordion-button {
@@ -12025,6 +12042,7 @@ body {
   -webkit-background-clip: text;
   background-clip: text;
 }
+span,
 .masthead .span{
   padding-left: 10px;
   background: linear-gradient(rgba(255, 0, 155, 0.9), rgba(149, 12, 12, 0.6));;
@@ -12136,8 +12154,12 @@ body {
 
 .contact-section {
   padding-top: 5rem;
+  background: transparent;
 }
 .contact-section .card {
+  width:100%;
+  height: 100%;
+  overflow: hidden;
   border: 0;
   border-bottom: 0.25rem solid rgba(255, 0, 203, 0.9);
 }
