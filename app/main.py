@@ -10,7 +10,7 @@ import pickle
 
 # setup the webserver
 # port may need to be changed if there are multiple flask servers running on same server
-port = 12396
+port = 12394
 base_url = get_base_url(port)
 
 def numbers_to_genre(argument):
