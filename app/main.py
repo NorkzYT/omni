@@ -1,5 +1,5 @@
 # import requirements needed
-from flask import Flask, render_template
+from flask import Flask, render_template,request
 from utils import get_base_url
 import joblib
 import sys
@@ -37,14 +37,36 @@ def home():
 @app.route(f"{base_url}", methods=['GET', 'POST'])
 def main():
     if request.method == 'GET':
-        return (flask.render_template('index.html', prediction_text = ""))
+        return (flask.render_template('website-code.html', prediction_text = "",pred_val = 0))
     if request.method == 'POST':
         input_features = [float(item) for item in request.form.values()]
-        input_array = np.array(input_list)
+        input_array = np.array(input_features)
         scaled_input = sc_load.transform(input_array.reshape(1,-1))
         genre_prediction = numbers_to_genre(pickled_model.predict(scaled_input)[0])
-        return render_template('index.html', prediction_text=genre_prediction)
+        return render_template('website-code.html', prediction_text=genre_prediction,pred_val = 1)
 
+    
+    
+# @app.route(f"{base_url}", methods=['GET', 'POST'])
+# def main():
+#     if request.method == 'GET':
+#         return(flask.render_template('index.html', prediction_text = ""))
+    
+#     if request.method == 'POST':
+        
+#         inp_features = [float(x) for x in request.form.values()]
+        
+#         print(inp_features)
+        
+#         input_variables = np.append(inp_features,1)
+        
+#         input_variables = input_variables.reshape(1,-1)
+       
+#         prediction = model.predict(input_variables)[0]
+        
+#         return render_template('index.html',
+#                                      prediction_text=prediction,
+#                                      )
 
 # define additional routes here
 # for example:

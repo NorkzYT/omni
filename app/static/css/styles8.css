@@ -637,7 +637,7 @@ progress {
 
 .img-fluid {
   max-width: 100%;
-  height: auto;
+  height: 100%;
 }
 
 .img-thumbnail {
@@ -4957,7 +4957,7 @@ fieldset:disabled .btn {
   flex-direction: column;
   min-width: 0;
   word-wrap: break-word;
-  background-color: #fff;
+  background-color: transparent;
   background-clip: border-box;
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 0.25rem;
@@ -7349,7 +7349,8 @@ fieldset:disabled .btn {
 }
 
 .shadow {
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+  box-shadow: 0 0.5rem 1rem rgba(255, 0, 203, 0.9) !important;
+  /* background-color: transparent; */
 }
 
 .shadow-sm {
@@ -8549,6 +8550,7 @@ fieldset:disabled .btn {
 
 .rounded {
   border-radius: 0.25rem !important;
+  overflow: hidden
 }
 
 .rounded-0 {

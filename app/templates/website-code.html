@@ -648,7 +648,7 @@
     <div class="row gx-0 justify-content-center border">
 
         <div class="col-lg-6 border-l" style=" height:625px; overflow: hidden;">
-          <iframe alt="..." class="img-fluid" src="{{url_for('static', filename='assets/accuracy.html')}}" style="width:100%; height:100%;"></iframe>/&gt;
+          <iframe alt="..." class="img-fluid" src="{{url_for('static', filename='assets/accuracy1.html')}}" style="width:100%; height:100%;"></iframe>/&gt;
       </div>
       <div class="col-lg-6 order-lg-first border-r justify-content-center" >
         <div class="bg-black text-center h-300 project">
@@ -782,12 +782,27 @@
 <br>
                           <p>
                           </p>
-                           <input type="submit" value="Submit" style="border-radius: 50%; padding: 5px 10px 5px 10px">
+                           <label for = "speech">Speechiness:</label><br>
+                          <input type = "text" id = "mod" name = "speech" required="required" />
+<br>
+                          <p>
+                          </p>
+                           <label for = "tempo">Tempo:</label><br>
+                          <input type = "text" id = "mod" name = "tempo" required="required" />
+<br>
+                          <p>
+                          </p>
+                           <label for = "valence">Valence:</label><br>
+                          <input type = "text" id = "mod" name = "valence" required="required" />
+<br>
+                          <p>
+                          </p>
+                           <input type="submit"  value="Submit" style="border-radius: 50%; padding: 5px 10px 5px 10px">
                         </form>
                         <p></p>
-               {% if prediction_test != null or prediction_test != '' %}
+               {% if pred_val %}
                 <p class="mb-0 text-white-50">
-                  {{ prediction_text }}!
+                  The Genre of music is : {{ prediction_text }}!
               </p> 
            {% endif %}
 
